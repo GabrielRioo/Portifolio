@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: calc(100% - 60px);
+  margin: 40px 0 0px 60px;
+}
+
+.content_options {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  width: 100%;
+}
+
+.contato {
+  margin-bottom: 50px;
+  width: 250px;
+  height: 40px;
+  background-color: bisque;
+}
