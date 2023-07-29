@@ -5,7 +5,7 @@ const SIDEBAR_STYLE = {
     display: 'flex',
     flexDirection: 'column',
     gap: '30%',
-    backgroundColor: 'black',
+    backgroundColor: '#323238',
     width: '60px',
     height: '100vh'
 }

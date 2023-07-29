@@ -7,15 +7,15 @@ function App() {
     <div className="container">
       <Sidebar />
       <div className="content">
-        <h1>Headline aqui</h1>
-
+        <h1>Confira minhas habilidades em TI <br/> com meu portfólio de projetos</h1>
+        <p>Por onde começar?</p>
         <div className="content_options"> 
           <Box />
           <Box />
           <Box />
         </div>
 
-        <button className="contato">clique aqui</button>
+        <button className="contato">Quero entrar em contato!</button>
       </div>
     </div>
   )
