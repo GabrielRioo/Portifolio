@@ -1,26 +1,23 @@
-import { Container } from "./styles";
-import Box from '../../components/Box'
+import { Container, BannerImageContainer } from "./styles";
+import NavbarPrincipal from '../../components/Navbar'
 
 export default function Home() {
+  const Navbar = [
+    { title: "Home", color: "red" },
+    { title: "About", color: "green" },
+    { title: "Projects", color: "blue" },
+  ];
+
   return (
     <Container>
       <header>
-        <div>
-          <img src="" alt="" />
-        </div>
-        <nav>
-          <ul>
-            <li>
+        <BannerImageContainer />
+
+        <NavbarPrincipal>
               <a href="/">Home</a>
-            </li>
-            <li>
               <a href="/about">About</a>
-            </li>
-            <li>
               <a href="/projects">Project</a>
-            </li>
-          </ul>
-        </nav>
+        </NavbarPrincipal>
       </header>
       <main>
         <div>
