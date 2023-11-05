@@ -7,6 +7,7 @@ export const globalStyles = globalCss({
     margin: 0,
 
     fontFamily: 'VT323',
+    color: '$yellow800',
   },
 
   body: {
