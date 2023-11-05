@@ -1,34 +1,36 @@
-import Image from "next/image";
-import { BoxTitle, Container, Content, Perfil, PerfilContent, PerfilDescription, PerfilImage, PerfilName, PerfilRole, PerfilYears, TitleContainer } from "./styles";
-import SmileImage from '../../assets/SmileImage.png'
+import Image, { StaticImageData } from "next/image";
+import { BoxTitle, Container, Content, PerfilDescription, TitleContainer } from "./styles";
+import Perfil from "@/pages/home/components/Perfil";
 
-export default function Box() {
+
+interface BoxProps {
+    iconSrc: StaticImageData;
+    title: string;
+    children: React.ReactNode;
+}
+
+export default function Box({ iconSrc, title, children }: BoxProps) {
     return (
         <>
             <Container>
                 <TitleContainer>
-                    <Image src={SmileImage} alt="Icon of a smile emoji" width={20} height={20}/>
+                    <Image src={iconSrc} alt="Icon of a smile emoji" width={20} height={20} />
                     <BoxTitle>
-                        <h2>About</h2>
+                        <h2>{title}</h2>
                     </BoxTitle>
                 </TitleContainer>
                 <Content>
-                    <Perfil>
-                        <PerfilImage>
-                            <Image src="https://github.com/GabrielRioo.png" alt="Foto de Gabriel de Paiva Rio" layout="fill"/>
-                        </PerfilImage>
-                        <PerfilContent>
-                            <PerfilName><strong>Gabriel de Paiva Rio</strong></PerfilName>
-                            <PerfilRole><strong>Fullstack Developer</strong></PerfilRole>
-                            <PerfilYears>4 years</PerfilYears>
-                        </PerfilContent>
-                    </Perfil>
-
-                    <PerfilDescription>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam risus eget tortor egestas, eget pellentesque urna malesuada. Sed bibendum hendrerit enim, in mattis nulla auctor eget.
-                    </PerfilDescription>
+                    {title === "About" && (
+                        <Perfil />
+                    )}
+                    {title === "Links" && (
+                        <div>
+                            
+                        </div>
+                    )}
                 </Content>
             </Container>
         </>
     )
 }
+

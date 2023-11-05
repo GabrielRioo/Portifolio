@@ -1,6 +1,8 @@
 import { Container, BannerImageContainer } from "./styles";
 import NavbarPrincipal from '../../components/Navbar'
 import Box from "@/components/Box";
+import SmileImage from '../../assets/SmileImage.png'
+import SeachImage from '../../assets/SeachImage.png'
 
 export default function Home() {
   const Navbar = [
@@ -24,9 +26,9 @@ export default function Home() {
       <main>
         <div>
 
-          <Box>
+          <Box iconSrc={SmileImage} title="About" />
 
-          </Box>
+          <Box iconSrc={SeachImage} title="Links" />
           
 
           <section id="skills">
