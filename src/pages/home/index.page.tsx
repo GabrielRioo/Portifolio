@@ -29,7 +29,6 @@ export default function Home() {
           <Box iconSrc={SmileImage} title="About" />
 
           <Box iconSrc={SeachImage} title="Links" />
-          
 
           <section id="skills">
             <h2>Skills</h2>
@@ -76,13 +75,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="links">
-            <h2>Links</h2>
-            <ul>
-              <li><a href="https://www.linkedin.com/in/seu-nome" target="_blank" rel="noopener">LinkedIn</a></li>
-              <li><a href="https://github.com/seu-usuario" target="_blank" rel="noopener">GitHub</a></li>
-            </ul>
-          </section>
+          
 
         </div>
       </main>

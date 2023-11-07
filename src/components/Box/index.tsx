@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import { BoxTitle, Container, Content, PerfilDescription, TitleContainer } from "./styles";
 import Perfil from "@/pages/home/components/Perfil";
+import Links from "@/pages/home/components/Links";
 
 
 interface BoxProps {
@@ -25,7 +26,7 @@ export default function Box({ iconSrc, title, children }: BoxProps) {
                     )}
                     {title === "Links" && (
                         <div>
-                            
+                            <Links />
                         </div>
                     )}
                 </Content>
