@@ -18,15 +18,15 @@ export const NavbarItem = styled('div', {
     backgroundColor: '$yellow500',
     border: '2px solid $yellow800',
     
-    'a': {
-        color: '$yellow800',
-        textDecoration: 'none',
-        textTransform: 'uppercase',
+    // 'a': {
+    //     color: '$yellow800',
+    //     textDecoration: 'none',
+    //     textTransform: 'uppercase',
         
-        fontSize: '25pt',
-        fontWeight: 'bold',
-        // '-webkit-text-stroke': '1px #CB8834'
-    },
+    //     fontSize: '25pt',
+    //     fontWeight: 'bold',
+    //     // '-webkit-text-stroke': '1px #CB8834'
+    // },
 
     '&:hover': {
       backgroundColor: '$yellow200'

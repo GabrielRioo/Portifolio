@@ -19,3 +19,13 @@ export const BannerImageContainer = styled('div', {
   backgroundRepeat: "repeat",
   backgroundSize: "auto",
 })
+
+export const NavbarItem = styled('a', {
+    color: '$yellow800',
+    textDecoration: 'none',
+    textTransform: 'uppercase',
+
+    fontSize: '25pt',
+    fontWeight: 'bold',
+    // '-webkit-text-stroke': '1px #CB8834'
+})

@@ -1,8 +1,9 @@
-import { Container, BannerImageContainer } from "./styles";
+import { Container, BannerImageContainer, NavbarItem } from "./styles";
 import NavbarPrincipal from '../../components/Navbar'
 import Box from "@/components/Box";
 import SmileImage from '../../assets/SmileImage.png'
 import SeachImage from '../../assets/SeachImage.png'
+import HeartImage from '../../assets/HeartImage.png'
 
 export default function Home() {
   const Navbar = [
@@ -17,9 +18,9 @@ export default function Home() {
         <BannerImageContainer />
 
         <NavbarPrincipal>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/projects">Project</a>
+          <NavbarItem href="/">Home</NavbarItem>
+          <NavbarItem href="/about">About</NavbarItem>
+          <NavbarItem href="/projects">Project</NavbarItem>
         </NavbarPrincipal>
       </header>
 
@@ -30,28 +31,9 @@ export default function Home() {
 
           <Box iconSrc={SeachImage} title="Links" />
 
-          <section id="skills">
-            <h2>Skills</h2>
-            <div>
-              <div id="frontend">
-                <img src="caminho/para/sua/imagem.jpg" alt="Foto de Gabriel de Paiva Rio" />
-              </div>
-              <div id="backend">
-                <img src="caminho/para/sua/imagem.jpg" alt="Foto de Gabriel de Paiva Rio" />
-              </div>
-              <div id="devops">
-                <img src="caminho/para/sua/imagem.jpg" alt="Foto de Gabriel de Paiva Rio" />
-              </div>
-            </div>
+          <Box iconSrc={HeartImage} title="Skills" />
 
-            <nav>
-              <ul>
-                <li><a href="#frontend">Frontend</a></li>
-                <li><a href="#backend">Backend</a></li>
-                <li><a href="#devops">DevOps</a></li>
-              </ul>
-            </nav>
-          </section>
+          
 
           <section id="experiences">
             <h2>Experiences</h2>
