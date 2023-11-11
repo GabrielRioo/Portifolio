@@ -3,12 +3,13 @@ import { BoxTitle, Container, Content, PerfilDescription, TitleContainer } from 
 import Perfil from "@/pages/home/components/Perfil";
 import Links from "@/pages/home/components/Links";
 import Skills from "@/pages/home/components/Skill";
+import Experiences from "@/pages/home/components/Experiences";
 
 
 interface BoxProps {
     iconSrc: StaticImageData;
     title: string;
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
 
 export default function Box({ iconSrc, title, children }: BoxProps) {
@@ -33,6 +34,11 @@ export default function Box({ iconSrc, title, children }: BoxProps) {
                     {title === "Skills" && (
                         <div>
                             <Skills />
+                        </div>
+                    )}
+                     {title === "Experiences" && (
+                        <div>
+                            <Experiences />
                         </div>
                     )}
                 </Content>
