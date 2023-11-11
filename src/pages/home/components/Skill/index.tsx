@@ -7,7 +7,7 @@ import { SkillsContent, NavbarItem } from "./styles";
 
 export default function Skills() {
     return (
-        <section id="skills">
+        <section id="skills" style={{width: '100%'}}>
             <SkillsContent>
                 <div id="frontend">
                     <Image src={HtmlEmblem} alt="Foto de Gabriel de Paiva Rio" width={40} height={40} />

@@ -14,6 +14,7 @@ export const {
         colors: {
             ColorBorder: '#CB8834',
             yellow200: '#FFF3C9',
+            yellow400: '#cb9d64',
             yellow500: '#FDDD64',
             yellow800: '#CB8834',
         }

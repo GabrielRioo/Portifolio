@@ -2,8 +2,10 @@ import { styled } from "@stitches/react";
 
 export const SkillsContent = styled('div', {
     display: 'flex',
-    alignItems: 'center',
-    margin: '.5em'
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginTop: '.5em',
+
 })
 
 export const NavbarItem = styled('a', {

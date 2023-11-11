@@ -4,7 +4,7 @@ export const LinkContainer = styled('div', {
     display: 'flex',
     flexDirection: 'row',
     alignContent: 'center',
-    justifyContent: 'center'
+    justifyContent: 'space-around',
 })
 
 export const LinkContent = styled('li', {

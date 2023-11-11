@@ -1,4 +1,4 @@
-import { Container, BannerImageContainer, NavbarItem } from "./styles";
+import { Container, BannerImageContainer, NavbarItem, Content, Footer } from "./styles";
 import NavbarPrincipal from '../../components/Navbar'
 import Box from "@/components/Box";
 import SmileImage from '../../assets/SmileImage.png'
@@ -20,27 +20,30 @@ export default function Home() {
 
         <NavbarPrincipal>
           <NavbarItem href="/">Home</NavbarItem>
-          <NavbarItem href="/about">About</NavbarItem>
-          <NavbarItem href="/projects">Project</NavbarItem>
+          <NavbarItem href="/about">Projects</NavbarItem>
+          <NavbarItem href="/projects">Contact</NavbarItem>
         </NavbarPrincipal>
       </header>
 
       <main>
-        <div>
+        <Content>
 
-          <Box iconSrc={SmileImage} title="About" />
+          <div style={{ flex: 1 }}>
+            <Box iconSrc={SmileImage} title="About" />
+            <Box iconSrc={SeachImage} title="Links" />
+          </div>
 
-          <Box iconSrc={SeachImage} title="Links" />
+          <div style={{ flex: 1 }}>
+            <Box iconSrc={HeartImage} title="Skills" />
+            <Box iconSrc={MoneyImage} title="Experiences" />
+          </div>
 
-          <Box iconSrc={HeartImage} title="Skills" />
-
-          <Box iconSrc={MoneyImage} title="Experiences" />
-
-        </div>
+        </Content>
       </main>
-      <footer>
+
+      <Footer>
         <p>COPYRIGHT © GABRIEL DE PAIVA RIO - ALL RIGHTS RESERVED</p>
-      </footer>
+      </Footer>
     </Container>
   )
 }

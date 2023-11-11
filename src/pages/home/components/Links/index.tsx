@@ -6,8 +6,7 @@ import RedirectIcon from "../../../../assets/RedirectIcon.png"
 
 export default function Links() {
     return (
-        <section id="links">
-            <ul>
+        <section id="links" style={{width: '100%'}}>
                 <LinkContainer>
                     <Image src={LinkedinIcon} alt="Linkedin Icon" width={40} height={40} />
                     <LinkContent>
@@ -27,8 +26,6 @@ export default function Links() {
                         <Image src={RedirectIcon} alt="Github Icon" width={18} height={18} />
                     </LinkContent>
                 </LinkContainer>
-
-            </ul>
         </section>
     )
 }

@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import { BoxTitle, Container, Content, PerfilDescription, TitleContainer } from "./styles";
+import { BoxContent, BoxTitle, Container, Content, TitleContainer } from "./styles";
 import Perfil from "@/pages/home/components/Perfil";
 import Links from "@/pages/home/components/Links";
 import Skills from "@/pages/home/components/Skill";
@@ -23,24 +23,20 @@ export default function Box({ iconSrc, title, children }: BoxProps) {
                     </BoxTitle>
                 </TitleContainer>
                 <Content>
-                    {title === "About" && (
-                        <Perfil />
-                    )}
-                    {title === "Links" && (
-                        <div>
+                    <BoxContent>
+                        {title === "About" && (
+                            <Perfil />
+                        )}
+                        {title === "Links" && (
                             <Links />
-                        </div>
-                    )}
-                    {title === "Skills" && (
-                        <div>
+                        )}
+                        {title === "Skills" && (
                             <Skills />
-                        </div>
-                    )}
-                     {title === "Experiences" && (
-                        <div>
+                        )}
+                        {title === "Experiences" && (
                             <Experiences />
-                        </div>
-                    )}
+                        )}
+                    </BoxContent>
                 </Content>
             </Container>
         </>

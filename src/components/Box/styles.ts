@@ -1,7 +1,7 @@
 import { styled } from "@stitches/react";
 
 export const Container = styled('section', {
-    width: '20em',
+    // minWidth: '25em',
 
     backgroundColor: 'white',
     border: '2px solid $ColorBorder',
@@ -10,6 +10,8 @@ export const Container = styled('section', {
     display: 'flex',
     justifyContent: 'end',
     alignItems: 'end',
+
+    margin: '.5em',
 
     h2: {
         textTransform: 'uppercase',
@@ -36,8 +38,8 @@ export const TitleContainer = styled('div', {
 
 export const Content = styled('div', {
     backgroundColor: '$yellow200',
-    width: '19em',
-    margin: '0 5px 5px 5px',
+    margin: '5px',
+    width: 'calc(100% - 10px)',
 
     border: '3px solid $ColorBorder',
 })
@@ -55,4 +57,13 @@ export const BoxTitle = styled('div', {
 
     textAlign: 'center',
     
+})
+
+export const BoxContent = styled('div', {
+    display: 'flex',
+    justifyContent: 'start',
+    alignItems: 'start',
+
+    width: '100%'
+
 })
