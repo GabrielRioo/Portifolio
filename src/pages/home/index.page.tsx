@@ -20,8 +20,8 @@ export default function Home() {
 
         <NavbarPrincipal>
           <NavbarItem href="/">Home</NavbarItem>
-          <NavbarItem href="/about">Projects</NavbarItem>
-          <NavbarItem href="/projects">Contact</NavbarItem>
+          <NavbarItem href="/projects">Projects</NavbarItem>
+          <NavbarItem href="/contact">Contact</NavbarItem>
         </NavbarPrincipal>
       </header>
 
@@ -29,13 +29,13 @@ export default function Home() {
         <Content>
 
           <div style={{ flex: 1 }}>
-            <Box iconSrc={SmileImage} title="About" />
-            <Box iconSrc={SeachImage} title="Links" />
+            <Box iconSrc={SmileImage} session="About" />
+            <Box iconSrc={SeachImage} session="Links" />
           </div>
 
           <div style={{ flex: 1 }}>
-            <Box iconSrc={HeartImage} title="Skills" />
-            <Box iconSrc={MoneyImage} title="Experiences" />
+            <Box iconSrc={HeartImage} session="Skills" />
+            <Box iconSrc={MoneyImage} session="Experiences" />
           </div>
 
         </Content>

@@ -1,10 +1,6 @@
 import Image from "next/image";
 import NavbarPrincipal from '../../../../components/Navbar'
-import HtmlEmblem from '../../../../assets/HtmlEmblem.png'
-import CsharpEmblem from '../../../../assets/CsharpEmblem.png'
-import SqlEmblem from '../../../../assets/SqlEmblem.png'
-import { SkillsContent, NavbarItem, CompanyImage, ExperienceContent, YearRole, RoleName, ExperienceContainer, ExperienceDescription } from "./styles";
-import { PerfilYears } from "../Perfil/styles";
+import { NavbarItem, CompanyImage, ExperienceContent, YearRole, RoleName, ExperienceContainer, ExperienceDescription } from "./styles";
 
 export default function Experiences() {
     return (
