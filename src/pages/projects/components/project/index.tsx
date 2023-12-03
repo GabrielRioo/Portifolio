@@ -1,3 +1,4 @@
+import { ProjectContainer } from "./styles";
 
 interface ProjectProps {
     children?: React.ReactNode;
@@ -5,8 +6,8 @@ interface ProjectProps {
 
 export default function Project({ children }: ProjectProps) {
     return (
-        <div>
+        <ProjectContainer>
             {children}
-        </div>
+        </ProjectContainer>
     )
 }

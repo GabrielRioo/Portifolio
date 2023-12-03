@@ -1,7 +1,7 @@
 import { styled } from "@stitches/react";
 
 export const Container = styled('section', {
-    // minWidth: '25em',
+    minHeight: '503px',
 
     backgroundColor: 'white',
     border: '2px solid $ColorBorder',
@@ -42,6 +42,8 @@ export const Content = styled('div', {
     width: 'calc(100% - 10px)',
 
     border: '3px solid $ColorBorder',
+
+    flex: 1
 })
 
 export const BoxTitle = styled('div', {

@@ -17,12 +17,17 @@ export const Container = styled('div', {
 
     'footer': {
         width: '100%'
-    }
+    },
+
 })
 
 export const Content = styled('div', {
     display: "flex", 
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+
+    '@media (max-width: 650px)': {
+        display: 'block',
+    }
 })
 
 export const BannerImageContainer = styled('div', {

@@ -21,8 +21,30 @@ export const Container = styled('div', {
 })
 
 export const Content = styled('div', {
-    display: "flex", 
+    display: "flex",
     justifyContent: "space-between",
+
+    '@media (max-width: 1000px)': {
+        display: 'flex',
+        flexDirection: 'column',
+
+        div: {
+            display: 'flex',
+            alignItems: 'center',
+        },
+
+        section: {
+            justifyContent: 'start',
+            flex: 1
+        }
+    },
+
+    '@media (max-width: 600px)': {
+        '>div': {
+            display: 'flex',
+            flexDirection: 'column',
+        },
+    },
 
     div: {
         textAlign: "center",
@@ -31,12 +53,11 @@ export const Content = styled('div', {
             margin: '0 1em 1em 1em',
             fontSize: '14pt',
             textAlign: 'justify'
-        }
+        },
 
-        // img: {
-        //     margin: '1em',
-        //     border: '3px solid $yellow800'
-        // }
+        img: {
+            width: '80%'
+        }
     }
 })
 

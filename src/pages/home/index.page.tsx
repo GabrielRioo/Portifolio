@@ -26,7 +26,7 @@ export default function Home() {
       </header>
 
       <main>
-        <Content>
+        <Content css={{variants: ['tablet', 'phone'],}}>
 
           <div style={{ flex: 1 }}>
             <Box iconSrc={SmileImage} session="About" />
