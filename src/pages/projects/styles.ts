@@ -24,6 +24,10 @@ export const Content = styled('div', {
     display: "flex",
     justifyContent: "space-between",
 
+    section: {
+        minHeight: '403px',
+    },
+
     '@media (max-width: 1000px)': {
         display: 'flex',
         flexDirection: 'column',
@@ -35,7 +39,10 @@ export const Content = styled('div', {
 
         section: {
             justifyContent: 'start',
-            flex: 1
+            flex: 1,
+
+            minHeight: '503px',
+
         }
     },
 

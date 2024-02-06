@@ -1,7 +1,7 @@
 import { styled } from "@stitches/react";
 
 export const Container = styled('section', {
-    minHeight: '503px',
+    // minHeight: '503px',
 
     backgroundColor: 'white',
     border: '2px solid $ColorBorder',

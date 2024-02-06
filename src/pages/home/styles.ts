@@ -50,6 +50,8 @@ export const NavbarItem = styled('a', {
 
 export const Footer = styled('footer', {
     textAlign: 'center',
+    position: 'absolute',
+    bottom: '10px',
 
     backgroundColor: '$yellow500',
     border: '2px solid $yellow800',

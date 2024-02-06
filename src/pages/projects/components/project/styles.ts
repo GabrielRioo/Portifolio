@@ -5,5 +5,9 @@ export const ProjectContainer = styled('div', {
         display: 'flex',
         flexDirection: 'column',
         
+        // '>div>section': {
+        //     minHeight: '503px',
+
+        // }
     },
 })
